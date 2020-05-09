@@ -1,0 +1,38 @@
+{
+    "env": {
+      "test": {
+        "presets": [
+          ["react-app", {
+            "targets": {
+              "node": "current"
+            }
+          }]
+        ],
+        "plugins": ["@babel/plugin-proposal-class-properties"]
+      },
+      "development": {
+        "presets": [
+          ["react-app", {
+            "modules": false,
+            "targets": {
+              "browsers": "> 2%",
+              "uglify": true
+            }
+          }]
+        ],
+        "plugins": ["@babel/plugin-proposal-class-properties"]
+      },
+      "production": {
+        "presets": [
+          ["react-app", {
+            "modules": false,
+            "targets": {
+              "browsers": "> 2%",
+              "uglify": true
+            }
+          }]
+        ],
+        "plugins": ["@babel/plugin-proposal-class-properties"]
+      }
+    }
+  }

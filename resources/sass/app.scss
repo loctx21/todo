@@ -1,0 +1,83 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.clickable {
+    cursor: pointer;
+}
+
+table.item {
+    tr:first-child {
+        td {
+            border-top: none;
+        }
+        td:nth-child(3) { 
+            width:100% 
+        }
+    }
+    .action {
+        width: 46px;
+        .icon:first-child {
+            margin-right: $gutter;
+        }
+    }
+}
+
+.badge {
+    &.lg {
+        font-size: 12px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+}
+
+.icon {
+    svg {
+        width: 20px;
+        color: $grey; 
+    }
+
+    &.delete {
+        :hover {
+            color: $red;
+        }
+    }
+}
+
+.action-ctrl {
+    button {
+        margin-right: $gutter;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .loader {
+        display: inline-block;
+        margin-right: $gutter * 6;
+        font-size: 5px;
+        vertical-align: top;
+    }
+}
+
+.ani-enter {
+    opacity: 0.01;
+}
+  
+.ani-enter.ani-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+  
+.ani-leave {
+    opacity: 1;
+}
+  
+.ani-leave.ani-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
