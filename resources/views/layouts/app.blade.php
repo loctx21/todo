@@ -28,7 +28,7 @@
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 @else
-                    <a class="navbar-brand" href="{{ url('/dashboard') }}">
+                    <a class="navbar-brand" href="{{ url('/todo') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 @endguest
